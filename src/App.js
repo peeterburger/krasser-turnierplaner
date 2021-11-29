@@ -1,10 +1,15 @@
-import Typography from '@mui/material/Typography';
 import * as React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Homepage from './pages/Homepage';
+import Dashboard from './pages/Dashboard';
 
 export default function App() {
   return (
-    <Typography>
-      Krasser Turnierplaner
-    </Typography>
+    <Routes>
+      <Route exact path='/' element={<Homepage />}>
+      </Route>
+      <Route path='/dashboard' element={<Dashboard />}>
+      </Route>
+    </Routes>
   );
 }
