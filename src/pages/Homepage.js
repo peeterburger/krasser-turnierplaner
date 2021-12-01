@@ -5,13 +5,10 @@ export default function Homepage() {
     <Box sx={{ backgroundColor: "black" }}>
       <AppBar sx={{ backgroundColor: "transparent", paddingLeft: 10, paddingRight: 10 }} elevation={0}>
         <Toolbar sx={{ display: "flex", height: 140 }}>
-          { /* icon */}
           <Box sx={{ width: 170, height: 60, backgroundColor: "red", textAlign: "center" }}>
             icon
           </Box>
-          <Box sx={{ flexGrow: 1 }}>
-
-          </Box>
+          <Box sx={{ flexGrow: 1 }} />
           <Stack direction="row" spacing={5}>
             <Typography sx={{ color: "gray" }}>Home</Typography>
             <Typography sx={{ color: "gray" }}>Insert Code</Typography>
@@ -34,7 +31,6 @@ export default function Homepage() {
         <Box sx={{ width: "50px", height: "50px", backgroundColor: "red" }}>
           scroll
         </Box>
-        { /* scroll down button */}
       </Container>
       <Container maxWidth="xl" sx={{ height: "250px" }} />
       <Container maxWidth="xl" sx={{ display: "flex" }}>
